@@ -13,23 +13,23 @@
         <div class="form__bg"></div>
         <form class="form__column" action="#" name="newform" method="POST">
             <div class="form__header">
-                <span class="close"></span>
-                <div class="form__list">
-                    <a class="form__link" href="#">Главная</a>
-                    <a class="form__link" href="#">Контакты</a>
-                    <a class="form__text">Форма обратной связи</a>
-                </div>
+                <button class="close"></button>
+                <ul class="form__list">
+                    <li class="form__item"><a class="form__link" href="#">Главная</a></li>
+                    <li class="form__item"><a class="form__link" href="#">Контакты</a></li>
+                    <li class="form__item"><a class="form__text">Форма обратной связи</a></li>
+                </ul>
                 <h2 class="form__title">Форма обратной связи</h2>
             </div>
             <div class="form__main">
-                <input class="form__input" type="text" name="full-name" id="name" placeholder="Фамилия Имя Отчество">
-                <input class="form__input" type="email" name="email" id="email" placeholder="Введите Ваш Email">
-                <input class="form__input" type="phone" name="phone" id="phone" placeholder="Введите Ваш телефон">
-                <textarea class="form__area" name="text" id="text" placeholder="Введите Ваше сообщение"></textarea>
+                <input class="form__input" type="text" value="" name="full-name" id="name" placeholder="Фамилия Имя Отчество"> 
+                <input class="form__input" type="email" value="" name="email" id="email" placeholder="Введите Ваш Email">
+                <input class="form__input" type="phone" value="" name="phone" id="phone" placeholder="Введите Ваш телефон">
+                <textarea class="form__area" name="text" value="" id="text" placeholder="Введите Ваше сообщение"></textarea>
             </div>
             <div class="form__footer">
                 <input class="form__code" type="text" name="code">
-                <span class="form__span">Введите код на картинке справа</span>
+                <label class="form__label" for="text">Введите код на картинке справа</label>
                 <img class="form__img" src="img/capcha_93.png" alt="Captcha">
                 <input  class="form__button" type="submit" value="Отправит">
             </div>

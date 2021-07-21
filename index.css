@@ -43,7 +43,7 @@ font-family: "RobotoRegular", sans-serif; */
 }
 .form__header {
     width: 920px;
-    padding: 50px 0 40px;
+    padding: 40px 0 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,12 +66,13 @@ font-family: "RobotoRegular", sans-serif; */
     bottom: 35px;
 }
 .form__list {
-    width: 920px;
-    margin-right: 310px;
-    margin-left: 310px;
+    width: 320px;
     display: flex;
     justify-content: center;
     gap: 30px;
+}
+.form__item {
+    list-style-type: none;
 }
 .form__link {
     text-decoration: none;
@@ -89,6 +90,7 @@ font-family: "RobotoRegular", sans-serif; */
     font-size: 38px;
     line-height: 36px;
     letter-spacing: -0.02em;
+    margin-top: -2px;
 }
 .form__main {
     background-color: #f8f8f8;
@@ -117,14 +119,14 @@ font-family: "RobotoRegular", sans-serif; */
     border: 2px solid #ebebeb;
     padding: 15px 0 0 30px;
     outline: none;
-    
+    resize: none;
 }
 .form__area:focus {
     background-color: #d3e6f1;
     border: 2px solid #b3cbda;
 }
 .form__footer {
-    padding: 40px 1px 80px 210px;
+    padding: 40px 1px 60px 210px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -134,8 +136,13 @@ font-family: "RobotoRegular", sans-serif; */
     height: 40px;
     border: 2px solid #ebebeb;
     background-color: #f8f8f8;
+    outline: none;
 }
-.form__span {
+.form__code:focus {
+    background-color: #d3e6f1;
+    border: 2px solid #b3cbda;
+}
+.form__label {
     font-size: 12px;
     line-height: 12px;
     letter-spacing: 0.04em;
@@ -164,12 +171,14 @@ font-family: "RobotoRegular", sans-serif; */
 .close {
     position: absolute;
     right: 48%;
-    top: -15px;
+    top: -18px;
     width: 35px;
     height: 35px;
     background-color: #e10101;
     border-radius: 50%;
     cursor: pointer;
+    border: none;
+    z-index: 1;
 }
 
 .close::before, .close::after {
