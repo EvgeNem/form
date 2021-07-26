@@ -126,8 +126,12 @@ font-family: "RobotoRegular", sans-serif; */
     border: 2px solid #b3cbda;
 }
 .form__footer {
-    padding: 40px 1px 60px 210px;
+    padding: 40px 0 60px;
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+.form__wrapper {
     display: flex;
     flex-direction: column;
 }
@@ -150,8 +154,7 @@ font-family: "RobotoRegular", sans-serif; */
     margin-top: 5px;
 }
 .form__img {
-    position: absolute;
-    right: 210px;
+    margin-left: 20px;
 }
 .form__button {
     width: 208px;
@@ -164,8 +167,8 @@ font-family: "RobotoRegular", sans-serif; */
     color: #ffffff;
     position: absolute;
     bottom: -30px;
-    left: 350px;
-    padding: 0 0 15px 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .close {
